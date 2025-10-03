@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Customer Detail</title>
+    <style>
+        table { width: 50%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2>Customer Detail (User Access)</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <td th:text="${customer.id}"></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td th:text="${customer.name}"></td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td th:text="${customer.phoneNumber}"></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td th:text="${customer.email}"></td>
+        </tr>
+    </table>
+</body>
+</html>
